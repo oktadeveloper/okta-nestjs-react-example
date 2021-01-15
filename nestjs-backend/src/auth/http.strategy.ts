@@ -17,7 +17,7 @@ export class HttpStrategy extends PassportStrategy(Strategy) {
     try {
       return await this.authService.validateToken(token);
     } catch (error) {
-      done(error, 'The toke is not valid');
+      done(error, 'The token is not valid');
     }
   }
 }
